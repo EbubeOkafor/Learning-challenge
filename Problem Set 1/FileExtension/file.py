@@ -1,6 +1,5 @@
-file = input()
+file = input("Filename: ")
 file = file.lower()
-print(f"Filename: {file}")
 if ".gif" in file:
     print("image/gif")
 elif ".txt" in file:
