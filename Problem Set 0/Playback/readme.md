@@ -1,4 +1,4 @@
-The problem required that a user string input be output with ellipses replacing any whitespaces.
+The problem require that a user string input be output with ellipses replacing any whitespaces.
 When I saw this problem, I knew I needed a command which I could use to replace whitespaces with ellipses. I did some research and while researching. I found the .replace() command. When this command was implemented in my code, it worked.
 
 Syntax used: str.replace(arg1, arg2); this command removes a specified string and replaces it with another specifieed string. arg1 represents the replaced string and arg2 represents the replacing string.
