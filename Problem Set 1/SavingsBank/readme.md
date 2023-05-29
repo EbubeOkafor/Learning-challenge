@@ -1,0 +1,5 @@
+This problem required that a program implemented asks user for a greeting. If the greeing starts with "hello", the program outputs $0. If the greeting starts with "h", the program outputs $20 and if the greeting starts wity neither then the program outputs $100.
+
+First of all, I start the program by prompting the user for input. Next, I changed the users input to lowercase with .lower() command. Then with a series of connditionals, I checked which conditions were satisfied and made the program display the required output. I first checked if hello was in greeting(variable storing user input), if true, $0 was displayed or the program continued to the next line. The program then checked if 'h' was in greeting and not 'hello'. If true, $20 was displayed else, $100 was displayed.
+
+The program was tested with: Hi, hello, Guy!
