@@ -1,47 +1,49 @@
+
 def main():
-    mealtime = convert(input("What time is it? "))
-    if 8.0 <= mealtime <= 7.0:
-        print("Breakfast time")
-    elif 13.0 <= mealtime <= 12.0:
-        print("Lunch time")
-    elif 19.0 <= mealtime <= 18.0:
-        print("Dinner time")
 
-def convert(time):
-    hours, minutes = time.split(":")
-    minutesToHour = float(minutes)/60
-    total = float(hours) + minutesToHour
-    return  (total)
-if __name__ == "__main__":
-    main()
-ef main():
+    mealtime = input("What is the time?")
 
-    mealTime =  convert(input("What time is it? "))
+    mealtime = convert(mealtime)
 
-    match mealTime:
+    if mealtime >= 7.0 and mealtime <= 8.0:
 
-        case mealTime if mealTime >= 7.0 and mealTime <= 8.0:
+        print("Breakfast Time!")
 
-            print("Breakfast time")
+    elif mealtime >= 12.0 and mealtime <= 13.0:
 
-        case mealTime if mealTime >= 12.0 and mealTime <= 13.0:
+        print("Lunch Time!")
 
-            print("Lunch time")
+    elif mealtime >= 18.0 and mealtime <= 19.0:
 
-        case mealTime if mealTime >= 18.0 and mealTime <= 19.0:
-
-            print("Dinner time")
+        print("Dinner Time!")
 
 def convert(time):
 
-    hours, minutes = time.split(":")
+    time = time.split(':')
 
-    minutesToHour = float(minutes)/60
+    time[0] = float(time[0])
 
-    total = float(hours) + minutesToHour
+    time[1] = float(time[1])
 
-    return  (total)
+    floatTime = (time[0]*60) + time[1]
+
+    floatTime = floatTime / 60
+
+    return round(floatTime, 1)
 
 if __name__ == "__main__":
 
-    main()
+        main()
+   
+    
+
+
+
+
+
+
+
+
+
+
+
