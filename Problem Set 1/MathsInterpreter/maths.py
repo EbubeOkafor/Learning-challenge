@@ -9,7 +9,7 @@ elif maths[1] == "-":
     maths[0] = int(maths[0])
     maths[2] = int(maths[2])
     expression = maths[0] - maths[2]
-    print(round(expression, 1))
+    print(f"{expression, .1f}")
 elif maths[1] == "+":
     maths[0] = int(maths[0])
     maths[2] = int(maths[2])

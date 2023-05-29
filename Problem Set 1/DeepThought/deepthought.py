@@ -6,4 +6,3 @@ elif int(question) == 42:
     print("Yes")
 else:
     print("No")
-

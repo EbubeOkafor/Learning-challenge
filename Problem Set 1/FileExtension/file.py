@@ -10,7 +10,9 @@ elif ".pdf" in file:
     print("image/pdf")
 elif ".png" in file:
     print("image/png")
-elif ".jpg" or "jpeg" in file:
+elif ".jpg" in file:
+    print("image/jpeg")
+elif "jpeg" in file:
     print("image/jpeg")
 else:
     print("application/octet-steam")

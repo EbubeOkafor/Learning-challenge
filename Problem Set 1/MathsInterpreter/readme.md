@@ -1,0 +1,1 @@
+This problem required me to implement a peogram that prompts the use for an arithmetic expression and calculates and outputs the result as a floating-point value formatted to one decimal place. if the user inputs 1 + 1, the program should output 2.0.
