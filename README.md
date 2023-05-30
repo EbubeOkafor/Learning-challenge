@@ -1,2 +1,1 @@
-# Learning-challenge
-This repository consists of my solution to CS50P
+This repository contains solutions to CS50p problem sets.
