@@ -25,16 +25,17 @@ def length(s):
         return True
     else:
         return False
+
 def digit(s):
     for i in s:
-        if i.isdigit() and not s[:7]: #i.endswith(('1','2','3','4','5','6','7','8','9','0')):
+        if i.isdigit() and not s[:7]:
             return False
         else:
             return True
 def punct(s):
-    for i in s:
-        if not i == [" ", ".", "!", "?", ";", ":", ","]:
-            return True
-        else:
-            return False
+    punctuation = [" ", ".", "!", "?", ";", ":", ","]
+    if punctuation in s:
+        return True
+    else:
+        return False
 main()
