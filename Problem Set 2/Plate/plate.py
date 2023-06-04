@@ -6,13 +6,23 @@ def main():
         print("Invalid")
 
 def is_valid(s):
+    for i in s:
+            if i.isdigit() and i == "0":
+                return False
+            elif i.isdigit() and s[-1].isdigit():
+                return True
+            elif not i.isdigit:
+                return True
+                
     if alpha(s) == True:
         if length(s) == True:
-            if digit(s) == True:
-                if punct(s) == True:
-                    return True
+              return True
+              if punct(s) == True:
+                return True
     else:
         return False
+    
+    
 
 def alpha(s):
     if s[:2].isalpha == True:
@@ -26,16 +36,22 @@ def length(s):
     else:
         return False
 
-def digit(s):
+#def digit(s):
+ #   for i in s:
+  #      if i.isdigit():
+   #         m = re.search(r'\d+$', s)
+    #        if m == True:
+     #           return True
+        
+    
+def punct(s):
+    punctuation = [' ', ',', '!', '.', ':', ';','?']
     for i in s:
-        if i.isdigit() and not s[:7]:
+        if i in punctuation:
             return False
+        elif not i in punctuation:
+            return True
         else:
             return True
-def punct(s):
-    punctuation = [" ", ".", "!", "?", ";", ":", ","]
-    if punctuation in s:
-        return True
-    else:
-        return False
+
 main()
