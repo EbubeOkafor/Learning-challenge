@@ -4,6 +4,7 @@ while True:
         x, y = map(int, fraction.split("/"))
         percentage = round((x/y)*100)
         if x > y:
+            print("Numerator cannot be greater than denominator")
             continue
     except ValueError:
         pass

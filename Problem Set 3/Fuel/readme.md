@@ -1,0 +1,1 @@
+This prblem requied me o implement a program that prompts user for a fraction and then outputs as a percentage rounded to the nearest integer. If the percentage is lower than 1, the output is E. If the percentage is 99 or greater, the output is F.

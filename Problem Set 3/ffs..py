@@ -1,9 +1,9 @@
-text = input()
-
-for i in text:
-    if i.isdigit() == True:
-        i = i.replace(i, "/")
-        text = i.split("/")
-        break
-
-print(text[1])
+punctuation = [' ', ',', '!', '.', ':', ';','?']
+    for i in s:
+        if i in punctuation:
+            return True
+        elif i in punctuation:
+            print("hj")
+            return False
+        else:
+            return True)
